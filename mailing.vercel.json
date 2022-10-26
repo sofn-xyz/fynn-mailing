@@ -1,0 +1,5 @@
+{
+  "framework": "nextjs",
+  "buildCommand": "mailing server build",
+  "outputDirectory": ".mailing/.next"
+}
