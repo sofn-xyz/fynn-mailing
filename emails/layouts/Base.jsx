@@ -15,13 +15,13 @@ const Base = (
 ) => (
   <Mjml>
     <Head />
-    <MjmlBody>
+    <MjmlBody width={"640px"}>
       <MjmlWrapper
-        cssClass="wrapper"
         backgroundColor={backgroundColor}
         fullWidth={true}
+        padding="32px 20px"
       >
-        <MjmlSection paddingBottom={"0px"} cssClass="top-section">
+        <MjmlSection paddingBottom={"0px"} cssClass="main top-section">
           <MjmlColumn
             padding={"7px 7px 32px"}
             backgroundColor={colors.white}

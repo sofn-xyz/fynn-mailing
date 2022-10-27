@@ -57,6 +57,16 @@ const Head = ({ children }) => {
           border-bottom-left-radius: ${borderRadius.base}px;
           border-bottom-right-radius: ${borderRadius.base}px;
         }
+
+        @media (max-width:480px) {
+          .footer td {
+            padding: 10px 0px !important;
+          }
+
+          .main td {
+            padding: 10px 10px !important;
+          }
+        }
       `}</MjmlStyle>
       <MjmlAttributes>
         <MjmlAll
