@@ -1,15 +1,8 @@
-import { MjmlColumn, MjmlSection, MjmlText, MjmlImage } from "mjml-react";
+import { MjmlText, MjmlImage } from "mjml-react";
 import BaseLayout from "./layouts/Base";
-import Button from "./components/Button";
-import {
-  fontSize,
-  fontFamily,
-  lineHeight,
-  borderRadius,
-  colors,
-} from "./theme";
+import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 
-const Welcome = ({ name }) => {
+const SpecialMoment = ({ name, schoolName }) => {
   return (
     <BaseLayout backgroundColor={colors.green}>
       <MjmlImage
@@ -49,7 +42,7 @@ const Welcome = ({ name }) => {
         <b>Hi {name},</b>
       </MjmlText>
       <MjmlText>
-        You’re all set with a Fynn loan and are ready to attend UEI College!
+        You’re all set with a Fynn loan and are ready to attend {schoolName}!
       </MjmlText>
       <MjmlText>
         We’ll reach out shortly after your first day with more information about
@@ -60,7 +53,7 @@ const Welcome = ({ name }) => {
         payments, and more.
       </MjmlText>
       <MjmlText>
-        We’re excited to be a part of your success at UEI College!
+        We’re excited to be a part of your success at {schoolName}!
       </MjmlText>
       <MjmlText>
         Best,
@@ -71,4 +64,4 @@ const Welcome = ({ name }) => {
   );
 };
 
-export default Welcome;
+export default SpecialMoment;

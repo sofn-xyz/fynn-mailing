@@ -3,7 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 
-const Welcome = ({ name }) => {
+const Reminder = ({ name, schoolName, ctaUrl }) => {
   return (
     <BaseLayout backgroundColor={colors.greenDark}>
       <MjmlImage
@@ -16,7 +16,6 @@ const Welcome = ({ name }) => {
         align="left"
       />
       <MjmlImage
-        href="https://fynncredit.com"
         src="/assets/reminder.png"
         alt="Fynn"
         height="32px"
@@ -31,7 +30,7 @@ const Welcome = ({ name }) => {
       >
         Funding is just a<br /> few steps away!
       </MjmlText>
-      <Button href="https://www.google.com" text="Continue Your Application" />
+      <Button href={ctaUrl} text="Continue Your Application" />
       <MjmlDivider
         borderColor={colors.yellow}
         paddingTop="48px"
@@ -40,7 +39,7 @@ const Welcome = ({ name }) => {
       />
       <MjmlText>Hi {name},</MjmlText>
       <MjmlText>
-        You’re almost done with your loan application to attend UEI College.
+        You’re almost done with your loan application to attend {schoolName}.
         Continue your application below to see if you qualify for full tuition
         funding!
       </MjmlText>
@@ -57,4 +56,4 @@ const Welcome = ({ name }) => {
   );
 };
 
-export default Welcome;
+export default Reminder;

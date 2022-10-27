@@ -1,30 +1,23 @@
-import { MjmlColumn, MjmlSection, MjmlText, MjmlImage } from "mjml-react";
+import { MjmlText, MjmlImage } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
-import {
-  fontSize,
-  fontFamily,
-  lineHeight,
-  borderRadius,
-  colors,
-} from "./theme";
+import { fontSize, fontFamily, lineHeight } from "./theme";
 
-const Welcome = ({ name }) => {
+const Transactional = ({ name, schoolName, ctaUrl }) => {
   return (
     <BaseLayout>
       <MjmlImage
         href="https://fynncredit.com"
         src="/assets/logo-full.png"
-        alt="Fynn"
+        alt="Fynn Logo"
         height="28px"
         width="63.07px"
         paddingTop="0px"
         align="left"
       />
       <MjmlImage
-        href="https://fynncredit.com"
         src="/assets/balloons.png"
-        alt="Fynn"
+        alt="balloons"
         height="48px"
         width="48px"
         align="left"
@@ -42,16 +35,16 @@ const Welcome = ({ name }) => {
       </MjmlText>
       <MjmlText>Hi {name},</MjmlText>
       <MjmlText>
-        Congratulations! You have been approved for a Fynn loan to attend UEI
-        College.
+        Congratulations! You have been approved for a Fynn loan to attend{" "}
+        {schoolName}.
       </MjmlText>
       <MjmlText>
         Now it’s time to select your loan amount and verify your identity; click
         the button below to complete your loan.
       </MjmlText>
-      <Button href="https://www.google.com" text="Complete Your Loan" />
+      <Button href={ctaUrl} text="Complete Your Loan" />
       <MjmlText>
-        We’re excited to be a part of your success at UEI College!
+        We’re excited to be a part of your success at {schoolName}!
       </MjmlText>
       <MjmlText>
         Best,
@@ -62,4 +55,4 @@ const Welcome = ({ name }) => {
   );
 };
 
-export default Welcome;
+export default Transactional;

@@ -13,7 +13,7 @@ export default function Footer() {
       <MjmlSection paddingBottom={"0px"}>
         <MjmlColumn width="50px" cssClass="social-icon">
           <MjmlImage
-            href="https://fynncredit.com"
+            href="https://twitter.com/fynncredit"
             src="/assets/twitter.png"
             alt="Twitter Logo"
             height="40px"
@@ -23,7 +23,7 @@ export default function Footer() {
         </MjmlColumn>
         <MjmlColumn width="50px" cssClass="social-icon">
           <MjmlImage
-            href="https://fynncredit.com"
+            href="https://www.instagram.com/fynncredit"
             src="/assets/instagram.png"
             alt="Instagram Logo"
             height="40px"
