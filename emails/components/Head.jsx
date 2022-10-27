@@ -1,46 +1,70 @@
 import {
   MjmlHead,
-  MjmlFont,
   MjmlAttributes,
   MjmlAll,
   MjmlStyle,
+  MjmlFont,
 } from "mjml-react";
-import { black, grayDark } from "../theme";
+import {
+  fontFamily,
+  lineHeight,
+  fontSize,
+  colors,
+  borderRadius,
+} from "../theme";
 
 const Head = ({ children }) => {
   return (
     <MjmlHead>
       <MjmlFont
-        name="Inter"
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900"
+        name="DM Serif Display"
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap"
       />
       <MjmlStyle>{`
         .smooth {
           -webkit-font-smoothing: antialiased;
         }
-        .paragraph a {
-          color: ${black} !important;
-        }
-        .li {
-          text-indent: -18px;
-          margin-left: 24px;
-          display: inline-block;
-        }
         .footer a {
+          color: inherit !important;
           text-decoration: none !important;
-          color: ${grayDark} !important;
         }
-        @media (min-width:480px) {
-          td.hero {
-            padding-left: 24px !important;
-            padding-right: 24px !important;
-          }
+        .bottom-column a {
+          color: inherit !important;
+        }
+        .social-icon {
+          max-width: 60px !important;
+          display: inline-block !important;
+        }
+        .top-section {
+          border-top-left-radius: ${borderRadius.base}px;
+          border-top-right-radius: ${borderRadius.base}px;
+          border: 1px solid ${colors.black};
+          background-color: ${colors.white};
+        }
+        .top-column {
+          padding-top: 0px;
+          border-top-left-radius: ${borderRadius.base}px;
+          border-top-right-radius: ${borderRadius.base}px;
+        }
+        .bottom-section {
+          border-bottom-left-radius: ${borderRadius.base}px;
+          border-bottom-right-radius: ${borderRadius.base}px;
+          border: 1px solid ${colors.black};
+          background-color: ${colors.black};
+        }
+        .bottom-column {
+          padding-bottom: 0px;
+          border-bottom-left-radius: ${borderRadius.base}px;
+          border-bottom-right-radius: ${borderRadius.base}px;
         }
       `}</MjmlStyle>
       <MjmlAttributes>
         <MjmlAll
-          font-family='Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif'
-          font-weight="400"
+          fontFamily={fontFamily.sans}
+          fontWeight="400"
+          lineHeight={lineHeight.base}
+          fontSize={fontSize.base}
+          color={colors.black}
         />
       </MjmlAttributes>
       {children}

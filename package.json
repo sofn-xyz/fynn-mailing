@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "scripts": {
+    "start": "npx mailing",
+    "link:assets": "ln -sf ../../emails/assets ./.mailing/public"
+  },
   "dependencies": {
     "mailing-core": "^0.8.8",
     "mjml": "^4.13.0",
