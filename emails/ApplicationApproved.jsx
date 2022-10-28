@@ -3,7 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight } from "./theme";
 
-const ApplicationApproved = ({ name, schoolName, ctaUrl }) => {
+const ApplicationApproved = ({ name, schoolName }) => {
   return (
     <BaseLayout>
       <MjmlImage
@@ -43,7 +43,10 @@ const ApplicationApproved = ({ name, schoolName, ctaUrl }) => {
         Now it’s time to select your loan amount and verify your identity; click
         the button below to complete your loan.
       </MjmlText>
-      <Button href={ctaUrl} text="Complete Your Loan" />
+      <Button
+        href="https://apply.fynncredit.com/application"
+        text="Complete Your Loan"
+      />
       <MjmlText>
         We’re excited to be a part of your success at {schoolName}!
       </MjmlText>

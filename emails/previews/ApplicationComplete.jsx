@@ -1,5 +1,5 @@
-import ApplicationApproved from "../ApplicationApproved";
+import ApplicationComplete from "../ApplicationComplete";
 
 export function toAmelita() {
-  return <ApplicationApproved name="Amelita" schoolName="UEI College" />;
+  return <ApplicationComplete name="Amelita" schoolName="UEI College" />;
 }

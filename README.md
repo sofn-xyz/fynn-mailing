@@ -1,10 +1,10 @@
 # Fynn-Mailing
 
-This should boot mailing with:
+You can boot the mailing studio:
 
 ```
-yarn
-npx mailing
+yarn install
+yarn dev
 ```
 
 # Designs
