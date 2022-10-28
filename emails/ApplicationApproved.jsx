@@ -2,13 +2,14 @@ import { MjmlText, MjmlImage } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight } from "./theme";
+import assetUrl from "./util/assetUrl";
 
 const ApplicationApproved = ({ name, schoolName }) => {
   return (
     <BaseLayout>
       <MjmlImage
         href="https://fynncredit.com"
-        src="/assets/logo-full.png"
+        src={assetUrl("/assets/logo-full.png")}
         alt="Fynn Logo"
         height="28px"
         width="63.07px"
@@ -16,7 +17,7 @@ const ApplicationApproved = ({ name, schoolName }) => {
         align="left"
       />
       <MjmlImage
-        src="/assets/balloons.png"
+        src={assetUrl("/assets/balloons.png")}
         alt="balloons"
         height="48px"
         width="48px"

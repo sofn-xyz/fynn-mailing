@@ -2,13 +2,14 @@ import { MjmlText, MjmlImage, MjmlDivider, MjmlRaw } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
+import assetUrl from "./util/assetUrl";
 
 const MicrodepositFailure = ({ name }) => {
   return (
     <BaseLayout backgroundColor={colors.greenDark}>
       <MjmlImage
         href="https://fynncredit.com"
-        src="/assets/logo-full.png"
+        src={assetUrl("/assets/logo-full.png")}
         alt="Fynn"
         height="28px"
         width="63.07px"
@@ -16,7 +17,7 @@ const MicrodepositFailure = ({ name }) => {
         align="left"
       />
       <MjmlImage
-        src="/assets/action-required.png"
+        src={assetUrl("/assets/action-required.png")}
         alt="Fynn"
         height="33px"
         width="169px"

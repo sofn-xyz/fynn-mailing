@@ -1,11 +1,6 @@
-import {
-  MjmlSection,
-  MjmlColumn,
-  MjmlText,
-  MjmlImage,
-  MjmlGroup,
-} from "mjml-react";
+import { MjmlSection, MjmlColumn, MjmlText, MjmlImage } from "mjml-react";
 import { colors, fontSize } from "../theme";
+import assetUrl from "../util/assetUrl";
 
 export default function Footer() {
   return (
@@ -14,7 +9,7 @@ export default function Footer() {
         <MjmlColumn width="50px" cssClass="social-icon">
           <MjmlImage
             href="https://twitter.com/fynncredit"
-            src="/assets/twitter.png"
+            src={assetUrl("/assets/twitter.png")}
             alt="Twitter Logo"
             height="40px"
             width="40px"
@@ -24,7 +19,7 @@ export default function Footer() {
         <MjmlColumn width="50px" cssClass="social-icon">
           <MjmlImage
             href="https://www.instagram.com/fynncredit"
-            src="/assets/instagram.png"
+            src={assetUrl("/assets/instagram.png")}
             alt="Instagram Logo"
             height="40px"
             width="40px"
@@ -90,7 +85,7 @@ export default function Footer() {
 
           <MjmlImage
             href="https://fynncredit.com"
-            src="/assets/logo.png"
+            src={assetUrl("/assets/logo.png")}
             alt="Fynn Logo"
             height="16px"
             width="13.78px"

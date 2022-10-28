@@ -1,20 +1,21 @@
 import { MjmlText, MjmlImage } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
+import assetUrl from "./util/assetUrl";
 
 const ApplicationComplete = ({ name, schoolName }) => {
   return (
     <BaseLayout backgroundColor={colors.green}>
       <MjmlImage
         href="https://fynncredit.com"
-        src="/assets/logo-full.png"
+        src={assetUrl("/assets/logo-full.png")}
         alt="Fynn"
         height="28px"
         width="63.07px"
         padding="0px"
       />
       <MjmlImage
-        src="/assets/jumping-man.png"
+        src={assetUrl("/assets/jumping-man.png")}
         alt="celebratory person"
         height="160px"
         width="136.3px"
@@ -31,7 +32,7 @@ const ApplicationComplete = ({ name, schoolName }) => {
         You’re ready to attend your program!
       </MjmlText>
       <MjmlImage
-        src="/assets/squiggle.png"
+        src={assetUrl("/assets/squiggle.png")}
         alt="squiggle separator"
         padding="0px"
         width="107px"

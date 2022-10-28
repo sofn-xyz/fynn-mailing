@@ -2,13 +2,14 @@ import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
+import assetUrl from "./util/assetUrl";
 
 const IncompleteReminder5 = ({ name }) => {
   return (
     <BaseLayout backgroundColor={colors.greenDark}>
       <MjmlImage
         href="https://fynncredit.com"
-        src="/assets/logo-full.png"
+        src={assetUrl("/assets/logo-full.png")}
         alt="Fynn"
         height="28px"
         width="63.07px"
@@ -16,7 +17,7 @@ const IncompleteReminder5 = ({ name }) => {
         align="left"
       />
       <MjmlImage
-        src="/assets/reminder.png"
+        src={assetUrl("/assets/reminder.png")}
         alt="Fynn"
         height="32px"
         width="112px"
