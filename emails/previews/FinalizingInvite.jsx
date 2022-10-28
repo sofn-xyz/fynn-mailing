@@ -1,8 +1,8 @@
-import Transactional from "../Transactional";
+import FinalizingInvite from "../FinalizingInvite";
 
 export function toAmelita() {
   return (
-    <Transactional
+    <FinalizingInvite
       name="Amelita"
       schoolName="UEI College"
       ctaUrl="https://fynncredit.com"

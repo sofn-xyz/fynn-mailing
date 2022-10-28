@@ -3,7 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight } from "./theme";
 
-const Transactional = ({ name, schoolName, ctaUrl }) => {
+const ApplicationApproved = ({ name, schoolName, ctaUrl }) => {
   return (
     <BaseLayout>
       <MjmlImage
@@ -56,4 +56,4 @@ const Transactional = ({ name, schoolName, ctaUrl }) => {
   );
 };
 
-export default Transactional;
+export default ApplicationApproved;
