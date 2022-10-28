@@ -26,9 +26,9 @@ const ApplicationComplete = ({ name, schoolName }) => {
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
         align="center"
+        cssClass="header-md"
       >
-        You’re ready to attend
-        <br /> your program!
+        You’re ready to attend your program!
       </MjmlText>
       <MjmlImage
         src="/assets/squiggle.png"

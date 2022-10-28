@@ -16,7 +16,7 @@ const MicrodepositFailure = ({ name }) => {
         align="left"
       />
       <MjmlImage
-        src="/assets/reminder.png"
+        src="/assets/action-required.png"
         alt="Fynn"
         height="32px"
         width="112px"
@@ -27,7 +27,7 @@ const MicrodepositFailure = ({ name }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
-        cssClass="header-left"
+        cssClass="header-md"
       >
         Connect a new account
       </MjmlText>

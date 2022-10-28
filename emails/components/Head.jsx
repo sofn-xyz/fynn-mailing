@@ -58,13 +58,34 @@ const Head = ({ children }) => {
           border-bottom-right-radius: ${borderRadius.base}px;
         }
 
-        .header-left div{
+        .header-sm div{
+          max-width: 300px;
+        }
+
+        .header-md div{
           max-width: 340px;
+        }
+
+        .header-lg div{
+          max-width: 380px;
+        }
+
+        .header-xl div{
+          max-width: 410px;
         }
 
         @media (max-width:480px) {
           .footer td {
             padding: 10px 0px !important;
+          }
+          .header-sm div,
+          .header-md div,
+          .header-lg div,
+          .header-xl div{
+            font-size: 30px !important;
+          }
+          .top-column > table > tbody > tr > td {
+            padding: 7px 0 32px !important;
           }
         }
       `}</MjmlStyle>

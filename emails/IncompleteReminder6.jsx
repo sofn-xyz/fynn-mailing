@@ -27,7 +27,7 @@ const IncompleteReminder6 = ({ name }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
-        cssClass="header-left"
+        cssClass="header-lg"
       >
         Don’t miss out on funding. Complete your application today!
       </MjmlText>

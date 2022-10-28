@@ -27,7 +27,7 @@ const TuitionRequestReminder1 = ({ name }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
-        cssClass="header-left"
+        cssClass="header-md"
       >
         Select your loan amount to continue!
       </MjmlText>

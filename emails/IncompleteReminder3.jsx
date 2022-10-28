@@ -27,7 +27,7 @@ const IncompleteReminder3 = ({ name, schoolName }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
-        cssClass="header-left"
+        cssClass="header-md"
       >
         You’re almost done! Start on a path to a better future.
       </MjmlText>

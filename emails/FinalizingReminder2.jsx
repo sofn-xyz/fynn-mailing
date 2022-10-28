@@ -27,7 +27,7 @@ const FinalizingReminder2 = ({ name, schoolName }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
-        cssClass="header-left"
+        cssClass="header-md"
       >
         It's time to sign your loan documents!
       </MjmlText>

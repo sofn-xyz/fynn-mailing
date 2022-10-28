@@ -27,7 +27,7 @@ const TuitionRequestReminder4 = ({ name }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
-        cssClass="header-left"
+        cssClass="header-md"
       >
         Request a tuition amount before your funding is gone!
       </MjmlText>

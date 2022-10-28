@@ -28,7 +28,7 @@ const StudentDispersed = ({ name, schoolName }) => {
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
         paddingBottom="32px"
-        cssClass="header-left"
+        cssClass="header-xl"
       >
         We’ve officially sent your tuition to your school
       </MjmlText>

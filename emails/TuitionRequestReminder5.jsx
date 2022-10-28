@@ -27,7 +27,7 @@ const TuitionRequestReminder5 = ({ name }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
-        cssClass="header-left"
+        cssClass="header-xl"
       >
         Request a tuition amount for your Fynn loan
       </MjmlText>

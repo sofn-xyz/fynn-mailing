@@ -29,10 +29,9 @@ const ApplicationApproved = ({ name, schoolName }) => {
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
         paddingBottom="32px"
-        cssClass="header-left"
+        cssClass="header-md"
       >
-        You’re approved for
-        <br /> a loan up to $15,000!
+        You’re approved for a loan up to $15,000!
       </MjmlText>
       <MjmlText>Hi {name},</MjmlText>
       <MjmlText>
