@@ -87,6 +87,11 @@ const Head = ({ children }) => {
           .top-column > table > tbody > tr > td {
             padding: 7px 0 32px !important;
           }
+
+          .top-column > table > tbody > tr > td > table > tbody > tr > td {
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+          }
         }
       `}</MjmlStyle>
       <MjmlAttributes>

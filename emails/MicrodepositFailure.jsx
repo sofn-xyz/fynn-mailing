@@ -18,8 +18,8 @@ const MicrodepositFailure = ({ name }) => {
       <MjmlImage
         src="/assets/action-required.png"
         alt="Fynn"
-        height="32px"
-        width="112px"
+        height="33px"
+        width="169px"
         paddingTop="42px"
         align="left"
       />
@@ -46,16 +46,16 @@ const MicrodepositFailure = ({ name }) => {
         Fynn was not able to verify your identity with the bank account that you
         provided. Some reasons for this include the following:
       </MjmlText>
-      <MjmlText padding="1px 0 0 40px">
+      <MjmlText padding="1px 25px 0 40px">
         •&nbsp;&nbsp;The account is not a checking/savings account
       </MjmlText>
-      <MjmlText padding="1px 0 0 40px">
+      <MjmlText padding="1px 25px 0 40px">
         •&nbsp;&nbsp;The account is too new
       </MjmlText>
-      <MjmlText padding="1px 0 0 40px">
+      <MjmlText padding="1px 25px 0 40px">
         •&nbsp;&nbsp;The account is overdrawn or closed
       </MjmlText>
-      <MjmlText padding="1px 0 0 40px">
+      <MjmlText padding="1px 25px 0 40px">
         •&nbsp;&nbsp;You are not the owner of the account
       </MjmlText>
       <MjmlText>
