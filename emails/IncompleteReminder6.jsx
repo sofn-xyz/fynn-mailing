@@ -27,9 +27,9 @@ const IncompleteReminder6 = ({ name }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
+        cssClass="header-left"
       >
-        Don’t miss out on funding.
-        <br /> Complete your application today!
+        Don’t miss out on funding. Complete your application today!
       </MjmlText>
       <Button
         href="https://apply.fynncredit.com/login"

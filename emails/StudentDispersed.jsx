@@ -1,11 +1,10 @@
 import { MjmlText, MjmlImage } from "mjml-react";
 import BaseLayout from "./layouts/Base";
-import Button from "./components/Button";
-import { fontSize, fontFamily, lineHeight } from "./theme";
+import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 
-const Transactional = ({ name, schoolName, ctaUrl }) => {
+const StudentDispersed = ({ name, schoolName }) => {
   return (
-    <BaseLayout>
+    <BaseLayout backgroundColor={colors.green}>
       <MjmlImage
         href="https://fynncredit.com"
         src="/assets/logo-full.png"
@@ -31,21 +30,23 @@ const Transactional = ({ name, schoolName, ctaUrl }) => {
         paddingBottom="32px"
         cssClass="header-left"
       >
-        You’re approved for
-        <br /> a loan up to $15,000!
+        We’ve officially sent your tuition to your school
       </MjmlText>
       <MjmlText>Hi {name},</MjmlText>
       <MjmlText>
-        Congratulations! You have been approved for a Fynn loan to attend{" "}
-        {schoolName}.
+        We’ve sent your tuition to your school today. This means two things:
+      </MjmlText>
+      <MjmlText padding="1px 0 0 40px">
+        1.&nbsp;&nbsp;Your interest officially starts accruing today.
+      </MjmlText>
+      <MjmlText padding="1px 0 0 40px">
+        2.&nbsp;&nbsp;Next week, you will receive a text and email about how to
+        log into your borrower portal. You can manage all aspects of your loan
+        in your borrower portal.
       </MjmlText>
       <MjmlText>
-        Now it’s time to select your loan amount and verify your identity; click
-        the button below to complete your loan.
-      </MjmlText>
-      <Button href={ctaUrl} text="Complete Your Loan" />
-      <MjmlText>
-        We’re excited to be a part of your success at {schoolName}!
+        As always, please feel free to reach out with any questions. We’re
+        excited for your success at {schoolName}.
       </MjmlText>
       <MjmlText>
         Best,
@@ -56,4 +57,4 @@ const Transactional = ({ name, schoolName, ctaUrl }) => {
   );
 };
 
-export default Transactional;
+export default StudentDispersed;

@@ -27,9 +27,9 @@ const IncompleteReminder4 = ({ name }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
+        cssClass="header-left"
       >
-        Find out if you are
-        <br /> eligible for a Fynn loan!
+        Find out if you are eligible for a Fynn loan!
       </MjmlText>
       <Button
         href="https://apply.fynncredit.com/login"

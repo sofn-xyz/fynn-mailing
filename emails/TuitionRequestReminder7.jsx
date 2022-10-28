@@ -3,7 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 
-const IncompleteReminder2 = ({ name }) => {
+const TuitionRequestReminder7 = ({ name }) => {
   return (
     <BaseLayout backgroundColor={colors.greenDark}>
       <MjmlImage
@@ -29,11 +29,11 @@ const IncompleteReminder2 = ({ name }) => {
         lineHeight={lineHeight.tight}
         cssClass="header-left"
       >
-        Getting funded with Fynn only takes 5 minutes!
+        Your chance for funding will be archived soon
       </MjmlText>
       <Button
         href="https://apply.fynncredit.com/application"
-        text="Continue Your Application"
+        text="Complete Your Loan"
       />
       <MjmlDivider
         borderColor={colors.yellow}
@@ -41,16 +41,15 @@ const IncompleteReminder2 = ({ name }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>Hi {name},</MjmlText>
+      <MjmlText>{name},</MjmlText>
       <MjmlText>
-        You are nearly done with your application for Fynn. It takes less than
-        five minutes to get approved for a loan— submit your application and
-        find out how much you can get for your program!
+        There’s not much time left to request your tuition amount for your Fynn
+        loan! We need to know how much money you will need so that we can verify
+        that with your school. If you don’t make a tuition request, your
+        application may be archived soon, causing you to lose your accepted
+        status.
       </MjmlText>
-      <MjmlText>
-        If you'd like to cancel your application, go to your account by clicking
-        the button above and then select “Cancel Application.”{" "}
-      </MjmlText>
+
       <MjmlText>
         Best,
         <br />
@@ -60,4 +59,4 @@ const IncompleteReminder2 = ({ name }) => {
   );
 };
 
-export default IncompleteReminder2;
+export default TuitionRequestReminder7;

@@ -3,7 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 
-const IncompleteReminder2 = ({ name }) => {
+const TuitionRequestReminder1 = ({ name }) => {
   return (
     <BaseLayout backgroundColor={colors.greenDark}>
       <MjmlImage
@@ -29,11 +29,11 @@ const IncompleteReminder2 = ({ name }) => {
         lineHeight={lineHeight.tight}
         cssClass="header-left"
       >
-        Getting funded with Fynn only takes 5 minutes!
+        Select your loan amount to continue!
       </MjmlText>
       <Button
         href="https://apply.fynncredit.com/application"
-        text="Continue Your Application"
+        text="Complete Your Loan"
       />
       <MjmlDivider
         borderColor={colors.yellow}
@@ -43,14 +43,10 @@ const IncompleteReminder2 = ({ name }) => {
       />
       <MjmlText>Hi {name},</MjmlText>
       <MjmlText>
-        You are nearly done with your application for Fynn. It takes less than
-        five minutes to get approved for a loan— submit your application and
-        find out how much you can get for your program!
+        You’ll need to select a loan amount to proceed with your loan. You can
+        click the button above to choose an amount.
       </MjmlText>
-      <MjmlText>
-        If you'd like to cancel your application, go to your account by clicking
-        the button above and then select “Cancel Application.”{" "}
-      </MjmlText>
+
       <MjmlText>
         Best,
         <br />
@@ -60,4 +56,4 @@ const IncompleteReminder2 = ({ name }) => {
   );
 };
 
-export default IncompleteReminder2;
+export default TuitionRequestReminder1;

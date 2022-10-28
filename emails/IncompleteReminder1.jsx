@@ -27,8 +27,9 @@ const IncompleteReminder1 = ({ name, schoolName }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
+        cssClass="header-left"
       >
-        Funding is just a<br /> few steps away!
+        Funding is just a few steps away!
       </MjmlText>
       <Button
         href="https://apply.fynncredit.com/login"

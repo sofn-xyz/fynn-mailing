@@ -27,6 +27,7 @@ const IncompleteReminder5 = ({ name }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
+        cssClass="header-left"
       >
         There’s still time to complete your application!
       </MjmlText>

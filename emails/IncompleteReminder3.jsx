@@ -27,10 +27,9 @@ const IncompleteReminder3 = ({ name, schoolName }) => {
         fontSize={fontSize.xl}
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
+        cssClass="header-left"
       >
-        You’re almost done!
-        <br />
-        Start on a path to a<br /> better future.
+        You’re almost done! Start on a path to a better future.
       </MjmlText>
       <Button
         href="https://apply.fynncredit.com/application"

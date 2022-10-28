@@ -1,9 +1,9 @@
-import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
+import { MjmlText, MjmlImage, MjmlDivider, MjmlRaw } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 
-const IncompleteReminder2 = ({ name }) => {
+const MicrodepositFailure = ({ name }) => {
   return (
     <BaseLayout backgroundColor={colors.greenDark}>
       <MjmlImage
@@ -29,11 +29,11 @@ const IncompleteReminder2 = ({ name }) => {
         lineHeight={lineHeight.tight}
         cssClass="header-left"
       >
-        Getting funded with Fynn only takes 5 minutes!
+        Connect a new account
       </MjmlText>
       <Button
         href="https://apply.fynncredit.com/application"
-        text="Continue Your Application"
+        text="Complete Your Loan"
       />
       <MjmlDivider
         borderColor={colors.yellow}
@@ -43,14 +43,30 @@ const IncompleteReminder2 = ({ name }) => {
       />
       <MjmlText>Hi {name},</MjmlText>
       <MjmlText>
-        You are nearly done with your application for Fynn. It takes less than
-        five minutes to get approved for a loan— submit your application and
-        find out how much you can get for your program!
+        Fynn was not able to verify your identity with the bank account that you
+        provided. Some reasons for this include the following:
+      </MjmlText>
+      <MjmlText padding="1px 0 0 40px">
+        •&nbsp;&nbsp;The account is not a checking/savings account
+      </MjmlText>
+      <MjmlText padding="1px 0 0 40px">
+        •&nbsp;&nbsp;The account is too new
+      </MjmlText>
+      <MjmlText padding="1px 0 0 40px">
+        •&nbsp;&nbsp;The account is overdrawn or closed
+      </MjmlText>
+      <MjmlText padding="1px 0 0 40px">
+        •&nbsp;&nbsp;You are not the owner of the account
       </MjmlText>
       <MjmlText>
-        If you'd like to cancel your application, go to your account by clicking
-        the button above and then select “Cancel Application.”{" "}
+        Please reattempt the bank linking with a different account.
       </MjmlText>
+      <MjmlText>
+        If you don’t have another account you can quickly and easily create a
+        Chime account{" "}
+        <a href="https://www.kqzyfj.com/click-100634244-14415782">here</a>!
+      </MjmlText>
+
       <MjmlText>
         Best,
         <br />
@@ -60,4 +76,4 @@ const IncompleteReminder2 = ({ name }) => {
   );
 };
 
-export default IncompleteReminder2;
+export default MicrodepositFailure;
