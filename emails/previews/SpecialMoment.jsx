@@ -1,5 +1,5 @@
-import SpecialMoment from "../SpecialMoment";
+import ApplicationComplete from "../ApplicationComplete";
 
 export function toAmelita() {
-  return <SpecialMoment name="Amelita" schoolName="UEI College" />;
+  return <ApplicationComplete name="Amelita" schoolName="UEI College" />;
 }

@@ -2,7 +2,7 @@ import { MjmlText, MjmlImage } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 
-const SpecialMoment = ({ name, schoolName }) => {
+const ApplicationComplete = ({ name, schoolName }) => {
   return (
     <BaseLayout backgroundColor={colors.green}>
       <MjmlImage
@@ -64,4 +64,4 @@ const SpecialMoment = ({ name, schoolName }) => {
   );
 };
 
-export default SpecialMoment;
+export default ApplicationComplete;
