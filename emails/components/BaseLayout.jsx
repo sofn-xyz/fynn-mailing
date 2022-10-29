@@ -10,20 +10,16 @@ import {
 import Head from "../components/Head";
 import Footer from "../components/Footer";
 import assetUrl from "../util/assetUrl";
-import { colors, fontSize, spacing } from "./theme";
+import { colors, fontSize } from "./theme";
 import P from "../components/P";
 
 export default function BaseLayout({ backgroundColor, children, centerLogo }) {
   return (
     <Mjml>
       <Head />
-      <MjmlBody width={"640px"}>
-        <MjmlWrapper
-          backgroundColor={backgroundColor || colors.white}
-          fullWidth={true}
-          padding="32px 20px"
-        >
-          <MjmlSection paddingBottom={"0px"} cssClass="main top-section gutter">
+      <MjmlBody width="640px" backgroundColor={backgroundColor || colors.white}>
+        <MjmlWrapper fullWidth={true} padding="32px 20px">
+          <MjmlSection paddingBottom="0px" cssClass="main top-section gutter">
             <MjmlColumn
               paddingTop="7px"
               paddingBottom="32px"
