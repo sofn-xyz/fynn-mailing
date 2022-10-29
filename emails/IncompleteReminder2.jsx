@@ -1,5 +1,5 @@
 import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
-import BaseLayout from "./layouts/Base";
+import BaseLayout from "./components/BaseLayout";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";

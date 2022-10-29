@@ -1,5 +1,5 @@
 import { MjmlImage } from "mjml-react";
-import BaseLayout from "./layouts/Base";
+import BaseLayout from "./components/BaseLayout";
 import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
 import P from "./components/P";
