@@ -1,4 +1,4 @@
-import { MjmlText, MjmlImage } from "mjml-react";
+import { MjmlImage } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
 import { colors } from "./components/theme";
 import assetUrl from "./util/assetUrl";
@@ -24,14 +24,12 @@ const StudentDispersed = ({ name, schoolName }) => {
       <P>
         We’ve sent your tuition to your school today. This means two things:
       </P>
-      <MjmlText padding="1px 0 40px">
-        1.&nbsp;&nbsp;Your interest officially starts accruing today.
-      </MjmlText>
-      <MjmlText>
+      <P>1.&nbsp;&nbsp;Your interest officially starts accruing today.</P>
+      <P>
         2.&nbsp;&nbsp;Next week, you will receive a text and email about how to
         log into your borrower portal. You can manage all aspects of your loan
         in your borrower portal.
-      </MjmlText>
+      </P>
       <P>
         As always, please feel free to reach out with any questions. We’re
         excited for your success at {schoolName}.
