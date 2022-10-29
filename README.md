@@ -9,7 +9,7 @@ yarn dev
 
 # See it Live!
 
-(https://fynn-mailing.vercel.app/)[https://fynn-mailing.vercel.app/]
+https://fynn-mailing.vercel.app/
 
 # Designs
 
