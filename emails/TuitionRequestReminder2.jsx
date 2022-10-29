@@ -8,15 +8,6 @@ const TuitionRequestReminder2 = ({ name }) => {
   return (
     <BaseLayout backgroundColor={colors.greenDark}>
       <MjmlImage
-        href="https://fynncredit.com"
-        src={assetUrl("/assets/logo-full.png")}
-        alt="Fynn"
-        height="28px"
-        width="63.07px"
-        paddingTop="0px"
-        align="left"
-      />
-      <MjmlImage
         src={assetUrl("/assets/reminder.png")}
         alt="Fynn"
         height="32px"

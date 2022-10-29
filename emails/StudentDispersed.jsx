@@ -7,15 +7,6 @@ const StudentDispersed = ({ name, schoolName }) => {
   return (
     <BaseLayout backgroundColor={colors.green}>
       <MjmlImage
-        href="https://fynncredit.com"
-        src={assetUrl("/assets/logo-full.png")}
-        alt="Fynn Logo"
-        height="28px"
-        width="63.07px"
-        paddingTop="0px"
-        align="left"
-      />
-      <MjmlImage
         src={assetUrl("/assets/balloons.png")}
         alt="balloons"
         height="48px"

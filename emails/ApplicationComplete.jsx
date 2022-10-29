@@ -5,15 +5,7 @@ import assetUrl from "./util/assetUrl";
 
 const ApplicationComplete = ({ name, schoolName }) => {
   return (
-    <BaseLayout backgroundColor={colors.green}>
-      <MjmlImage
-        href="https://fynncredit.com"
-        src={assetUrl("/assets/logo-full.png")}
-        alt="Fynn"
-        height="28px"
-        width="63.07px"
-        padding="0px"
-      />
+    <BaseLayout backgroundColor={colors.green} centerLogo>
       <MjmlImage
         src={assetUrl("/assets/jumping-man.png")}
         alt="celebratory person"

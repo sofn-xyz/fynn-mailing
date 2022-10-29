@@ -1,5 +1,3 @@
-import Head from "../components/Head";
-import Footer from "../components/Footer";
 import {
   Mjml,
   MjmlBody,
@@ -7,11 +5,15 @@ import {
   MjmlSection,
   MjmlColumn,
   MjmlText,
+  MjmlImage,
 } from "mjml-react";
+import Head from "../components/Head";
+import Footer from "../components/Footer";
+import assetUrl from "../util/assetUrl";
 import { colors, fontSize } from "../theme";
 
 const Base = (
-  { backgroundColor, children } = { backgroundColor: colors.white }
+  { backgroundColor, children, centerLogo } = { backgroundColor: colors.white }
 ) => (
   <Mjml>
     <Head />
@@ -27,6 +29,15 @@ const Base = (
             backgroundColor={colors.white}
             cssClass="top-column"
           >
+            <MjmlImage
+              href="https://fynncredit.com"
+              src={assetUrl("/assets/logo-full.png")}
+              alt="Fynn Logo"
+              height="28px"
+              width="63px"
+              paddingTop="0px"
+              align={centerLogo ? "center" : "left"}
+            />
             {children}
           </MjmlColumn>
         </MjmlSection>
