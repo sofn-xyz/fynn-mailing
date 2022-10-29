@@ -30,7 +30,7 @@ const FinalizingReminder2 = ({ name, schoolName }) => {
         lineHeight={lineHeight.tight}
         cssClass="header-md"
       >
-        It's time to sign your loan documents!
+        It’s time to sign your loan documents!
       </MjmlText>
       <Button
         href="https://apply.fynncredit.com/application"
