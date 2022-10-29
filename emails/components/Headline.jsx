@@ -1,7 +1,7 @@
 import { MjmlText } from "mjml-react";
 import { fontSize, fontFamily, lineHeight } from "./theme";
 
-const Headline = ({ cssClass, paddingBottom, align, children }) => {
+export default function Headline({ cssClass, paddingBottom, align, children }) {
   return (
     <MjmlText
       fontSize={fontSize.xl}
@@ -14,6 +14,4 @@ const Headline = ({ cssClass, paddingBottom, align, children }) => {
       {children}
     </MjmlText>
   );
-};
-
-export default Headline;
+}

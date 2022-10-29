@@ -13,7 +13,7 @@ import {
   borderRadius,
 } from "../theme";
 
-const Head = ({ children }) => {
+export default function Head({ children }) {
   return (
     <MjmlHead>
       <MjmlFont
@@ -106,6 +106,4 @@ const Head = ({ children }) => {
       {children}
     </MjmlHead>
   );
-};
-
-export default Head;
+}
