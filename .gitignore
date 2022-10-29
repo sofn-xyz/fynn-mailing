@@ -1,3 +1,4 @@
 .mailing
 node_modules
 previews_html
+.DS_Store
