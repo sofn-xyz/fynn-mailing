@@ -1,16 +1,16 @@
 # Fynn-Mailing
 
-You can boot the mailing studio:
+## Local development
 
 ```
 yarn install
-yarn dev
+yarn mailing
 ```
 
-# See it Live!
+## See it Live
 
 https://fynn-mailing.vercel.app/
 
-# Designs
+## Designs
 
 https://www.figma.com/file/N1nSRAU7hADCqllIiNLrlQ/fynn-emails

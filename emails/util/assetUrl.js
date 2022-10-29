@@ -1,8 +1,5 @@
 const assetUrl = (url) => {
-  if (process.env.ASSET_URL && url.startsWith("/")) {
-    return `${process.env.ASSET_URL}${url}`;
-  }
-  return url;
+  return `https://raw.githubusercontent.com/sofn-xyz/mailing/fynn${url}`;
 };
 
 export default assetUrl;
