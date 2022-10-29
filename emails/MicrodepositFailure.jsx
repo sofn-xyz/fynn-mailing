@@ -11,7 +11,7 @@ const MicrodepositFailure = ({ name }) => {
     <BaseLayout backgroundColor={colors.greenDark}>
       <MjmlImage
         src={assetUrl("/assets/action-required.png")}
-        alt="Fynn"
+        alt="Reminder"
         height="33px"
         width="169px"
         paddingTop="42px"

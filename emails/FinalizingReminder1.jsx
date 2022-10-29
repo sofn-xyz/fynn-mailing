@@ -11,7 +11,7 @@ const FinalizingReminder1 = ({ name, schoolName }) => {
     <BaseLayout backgroundColor={colors.greenDark}>
       <MjmlImage
         src={assetUrl("/assets/reminder.png")}
-        alt="Fynn"
+        alt="Reminder"
         height="32px"
         width="112px"
         paddingTop="42px"
