@@ -40,11 +40,6 @@ const FinalizingInvite = ({ name, schoolName }) => {
         for you to sign. You can complete the last step by clicking the button
         above!
       </P>
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

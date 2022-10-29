@@ -44,12 +44,6 @@ const FinalizingReminder2 = ({ name, schoolName }) => {
         help. If you're no longer interested in financing your education with
         Fynn, just reply to this email and let us know.
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

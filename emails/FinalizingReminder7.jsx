@@ -40,12 +40,6 @@ const FinalizingReminder7 = ({ name }) => {
         signed your Fynn loan document to make it official. Your account may be
         archived soon, and with that, you could lose your funding.
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

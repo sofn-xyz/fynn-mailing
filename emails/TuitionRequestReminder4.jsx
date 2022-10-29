@@ -41,12 +41,6 @@ const TuitionRequestReminder4 = ({ name }) => {
         amount. Your school will verify it, and then we will let you know when
         it’s time to sign!
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

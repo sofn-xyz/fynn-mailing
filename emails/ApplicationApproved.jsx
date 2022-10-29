@@ -40,11 +40,6 @@ const ApplicationApproved = ({ name, schoolName }) => {
         text="Complete Your Loan"
       />
       <P>We’re excited to be a part of your success at {schoolName}!</P>
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

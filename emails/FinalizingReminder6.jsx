@@ -40,12 +40,6 @@ const FinalizingReminder6 = ({ name }) => {
         approval will be archived soon unless you sign your loan document. Don’t
         let this opportunity go to waste!
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

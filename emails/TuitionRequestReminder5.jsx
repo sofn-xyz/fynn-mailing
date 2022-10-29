@@ -40,12 +40,6 @@ const TuitionRequestReminder5 = ({ name }) => {
         loan. We need this information to be certified by your school before you
         can sign!
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

@@ -49,11 +49,6 @@ const IncompleteReminder6 = ({ name }) => {
         If you'd like to cancel your application, go to your account by clicking
         the button above and then select “Cancel Application.”
       </P>
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

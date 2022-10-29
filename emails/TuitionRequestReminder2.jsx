@@ -39,12 +39,6 @@ const TuitionRequestReminder2 = ({ name }) => {
         You still have to select a loan amount before you can receive funding
         from Fynn! Click the button above to choose an amount.
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

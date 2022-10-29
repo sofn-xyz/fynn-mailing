@@ -40,12 +40,6 @@ const FinalizingReminder5 = ({ name }) => {
         one more thing we need to finalize your loan: your signature. To make
         your loan official, simply click the button above!
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

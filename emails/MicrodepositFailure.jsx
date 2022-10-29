@@ -57,12 +57,6 @@ const MicrodepositFailure = ({ name }) => {
         Chime account{" "}
         <a href="https://www.kqzyfj.com/click-100634244-14415782">here</a>!
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

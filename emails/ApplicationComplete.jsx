@@ -47,11 +47,6 @@ const ApplicationComplete = ({ name, schoolName }) => {
         payments, and more.
       </P>
       <P>We’re excited to be a part of your success at {schoolName}!</P>
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

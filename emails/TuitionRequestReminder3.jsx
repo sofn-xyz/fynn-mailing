@@ -40,12 +40,6 @@ const TuitionRequestReminder3 = ({ name }) => {
         Click the button above or log into your Fynn account to complete this
         step.
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

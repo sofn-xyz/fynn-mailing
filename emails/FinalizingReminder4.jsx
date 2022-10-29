@@ -39,12 +39,6 @@ const FinalizingReminder4 = ({ name }) => {
         There’s one last simple step to secure funding from Fynn. All you have
         to do is sign your document!
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

@@ -41,11 +41,6 @@ const StudentDispersed = ({ name, schoolName }) => {
         As always, please feel free to reach out with any questions. We’re
         excited for your success at {schoolName}.
       </P>
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

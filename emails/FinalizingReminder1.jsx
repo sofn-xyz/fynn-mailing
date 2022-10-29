@@ -44,12 +44,6 @@ const FinalizingReminder1 = ({ name, schoolName }) => {
         Let us know if you have questions - we're here to help. We're looking
         forward to supporting your time in school and your future career.
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

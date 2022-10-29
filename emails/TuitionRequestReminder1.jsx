@@ -39,12 +39,6 @@ const TuitionRequestReminder1 = ({ name }) => {
         You’ll need to select a loan amount to proceed with your loan. You can
         click the button above to choose an amount.
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

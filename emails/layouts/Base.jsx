@@ -11,6 +11,7 @@ import Head from "../components/Head";
 import Footer from "../components/Footer";
 import assetUrl from "../util/assetUrl";
 import { colors, fontSize } from "../theme";
+import P from "../components/P";
 
 const Base = (
   { backgroundColor, children, centerLogo } = { backgroundColor: colors.white }
@@ -39,6 +40,11 @@ const Base = (
               align={centerLogo ? "center" : "left"}
             />
             {children}
+            <P>
+              Best,
+              <br />
+              The Fynn team
+            </P>
           </MjmlColumn>
         </MjmlSection>
         <MjmlSection paddingTop={"0px"} cssClass="bottom-section">

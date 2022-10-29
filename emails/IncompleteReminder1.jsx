@@ -51,11 +51,6 @@ const IncompleteReminder1 = ({ name, schoolName }) => {
       </P>
       <P>If you have any questions, simply respond to this email.</P>
       <P>We look forward to reviewing your application.</P>
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

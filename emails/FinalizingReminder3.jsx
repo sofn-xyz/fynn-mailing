@@ -40,12 +40,6 @@ const FinalizingReminder3 = ({ name }) => {
         days. There's still time to sign it and secure financing for your
         program!
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };

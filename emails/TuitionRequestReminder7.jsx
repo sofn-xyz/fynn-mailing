@@ -42,12 +42,6 @@ const TuitionRequestReminder7 = ({ name }) => {
         application may be archived soon, causing you to lose your accepted
         status.
       </P>
-
-      <P>
-        Best,
-        <br />
-        The Fynn team
-      </P>
     </BaseLayout>
   );
 };
