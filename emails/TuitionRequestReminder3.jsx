@@ -1,4 +1,4 @@
-import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
+import { MjmlImage, MjmlDivider } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
 import Button from "./components/Button";
 import { colors } from "./theme";

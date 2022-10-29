@@ -1,7 +1,7 @@
-import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
+import { MjmlImage, MjmlDivider } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
 import Button from "./components/Button";
-import { fontSize, fontFamily, lineHeight, colors } from "./theme";
+import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
 import P from "./components/P";
 
