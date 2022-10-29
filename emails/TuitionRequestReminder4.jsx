@@ -1,5 +1,6 @@
-import { MjmlImage, MjmlDivider } from "mjml-react";
+import { MjmlImage } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
+import Divider from "./components/Divider";
 import Button from "./components/Button";
 import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
@@ -24,12 +25,7 @@ const TuitionRequestReminder4 = ({ name }) => {
         href="https://apply.fynncredit.com/application"
         text="Complete Your Loan"
       />
-      <MjmlDivider
-        borderColor={colors.yellow}
-        paddingTop="48px"
-        paddingBottom="36px"
-        borderWidth="6px"
-      />
+      <Divider />
       <P>Hi {name},</P>
       <P>
         Before your loan can be certified by your school, we need to know how

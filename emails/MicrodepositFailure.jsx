@@ -1,5 +1,6 @@
-import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
+import { MjmlText, MjmlImage } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
+import Divider from "./components/Divider";
 import Button from "./components/Button";
 import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
@@ -22,12 +23,7 @@ const MicrodepositFailure = ({ name }) => {
         href="https://apply.fynncredit.com/application"
         text="Complete Your Loan"
       />
-      <MjmlDivider
-        borderColor={colors.yellow}
-        paddingTop="48px"
-        paddingBottom="36px"
-        borderWidth="6px"
-      />
+      <Divider />
       <P>Hi {name},</P>
       <P>
         Fynn was not able to verify your identity with the bank account that you

@@ -1,5 +1,6 @@
-import { MjmlImage, MjmlDivider } from "mjml-react";
+import { MjmlImage } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
+import Divider from "./components/Divider";
 import Button from "./components/Button";
 import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
@@ -24,12 +25,7 @@ const FinalizingReminder3 = ({ name }) => {
         href="https://apply.fynncredit.com/application"
         text="Sign your Fynn loan"
       />
-      <MjmlDivider
-        borderColor={colors.yellow}
-        paddingTop="48px"
-        paddingBottom="36px"
-        borderWidth="6px"
-      />
+      <Divider />
       <P>Hi {name},</P>
       <P>
         If we don't hear from you soon, your Fynn loan offer may expire in a few

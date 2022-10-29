@@ -1,5 +1,6 @@
-import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
+import { MjmlImage } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
+import Divider from "./components/Divider";
 import Button from "./components/Button";
 import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
@@ -24,12 +25,7 @@ const FinalizingInvite = ({ name, schoolName }) => {
         href="https://apply.fynncredit.com/application"
         text="Sign your loan"
       />
-      <MjmlDivider
-        borderColor={colors.yellow}
-        paddingTop="48px"
-        paddingBottom="36px"
-        borderWidth="6px"
-      />
+      <Divider />
       <P>Hi {name},</P>
       <P>
         {schoolName} has certified your application, and your contract is ready

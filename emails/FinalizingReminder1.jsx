@@ -1,5 +1,6 @@
-import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
+import { MjmlImage } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
+import Divider from "./components/Divider";
 import Button from "./components/Button";
 import P from "./components/P";
 import { colors } from "./theme";
@@ -24,12 +25,7 @@ const FinalizingReminder1 = ({ name, schoolName }) => {
         href="https://apply.fynncredit.com/application"
         text="Sign your loan"
       />
-      <MjmlDivider
-        borderColor={colors.yellow}
-        paddingTop="48px"
-        paddingBottom="36px"
-        borderWidth="6px"
-      />
+      <Divider />
       <P>Hello {name},</P>
       <P>
         Your loan is approved. All you need to do before you attend {schoolName}{" "}

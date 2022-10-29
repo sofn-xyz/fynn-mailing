@@ -1,7 +1,7 @@
 import { MjmlButton } from "mjml-react";
 import { colors, fontSize, lineHeight, borderRadius } from "../theme";
 
-const Button = ({ href, text }) => {
+export default function Button({ href, text }) {
   return (
     <MjmlButton
       lineHeight={lineHeight.base}
@@ -16,6 +16,4 @@ const Button = ({ href, text }) => {
       {text}
     </MjmlButton>
   );
-};
-
-export default Button;
+}
