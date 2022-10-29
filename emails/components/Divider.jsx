@@ -5,8 +5,8 @@ export default function Divider() {
   return (
     <MjmlDivider
       borderColor={colors.yellow}
-      paddingTop="48px"
-      paddingBottom="36px"
+      paddingTop="32px"
+      paddingBottom="30px"
       borderWidth="6px"
     />
   );

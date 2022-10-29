@@ -1,4 +1,4 @@
-import { MjmlText, MjmlImage } from "mjml-react";
+import { MjmlText, MjmlImage, MjmlSpacer } from "mjml-react";
 import BaseLayout from "./components/BaseLayout";
 import Divider from "./components/Divider";
 import Button from "./components/Button";
@@ -6,6 +6,7 @@ import { colors } from "./components/theme";
 import assetUrl from "./util/assetUrl";
 import P from "./components/P";
 import Headline from "./components/Headline";
+import Link from "./components/Link";
 
 const MicrodepositFailure = ({ name }) => {
   return (
@@ -18,7 +19,11 @@ const MicrodepositFailure = ({ name }) => {
         paddingTop="42px"
         align="left"
       />
-      <Headline cssClass="header-md">Connect a new account</Headline>
+      <Headline cssClass="header-xl" paddingBottom="0">
+        Connect a new account
+      </Headline>
+      <P>Verify your identity with a different account</P>
+      <MjmlSpacer height="10px" />
       <Button
         href="https://apply.fynncredit.com/application"
         text="Complete Your Loan"
@@ -45,7 +50,8 @@ const MicrodepositFailure = ({ name }) => {
       <P>
         If you don’t have another account you can quickly and easily create a
         Chime account{" "}
-        <a href="https://www.kqzyfj.com/click-100634244-14415782">here</a>!
+        <Link href="https://www.kqzyfj.com/click-100634244-14415782">here</Link>
+        !
       </P>
     </BaseLayout>
   );
