@@ -11,7 +11,7 @@ import {
   fontSize,
   colors,
   borderRadius,
-} from "../theme";
+} from "./theme";
 
 export default function Head({ children }) {
   return (

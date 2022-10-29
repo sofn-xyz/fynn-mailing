@@ -10,7 +10,7 @@ import {
 import Head from "../components/Head";
 import Footer from "../components/Footer";
 import assetUrl from "../util/assetUrl";
-import { colors, fontSize } from "../theme";
+import { colors, fontSize } from "./theme";
 import P from "../components/P";
 
 export default function BaseLayout(
