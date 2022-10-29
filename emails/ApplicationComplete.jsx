@@ -1,8 +1,9 @@
-import { MjmlText, MjmlImage } from "mjml-react";
+import { MjmlImage } from "mjml-react";
 import BaseLayout from "./layouts/Base";
-import { fontSize, fontFamily, lineHeight, colors } from "./theme";
+import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
 import P from "./components/P";
+import Headline from "./components/Headline";
 
 const ApplicationComplete = ({ name, schoolName }) => {
   return (
@@ -15,15 +16,9 @@ const ApplicationComplete = ({ name, schoolName }) => {
         paddingTop="42px"
         paddingBottom="14px"
       />
-      <MjmlText
-        fontSize={fontSize.xl}
-        fontFamily={fontFamily.serif}
-        lineHeight={lineHeight.tight}
-        align="center"
-        cssClass="header-lg"
-      >
+      <Headline align="center" cssClass="header-lg">
         You’re ready to attend your program!
-      </MjmlText>
+      </Headline>
       <MjmlImage
         src={assetUrl("/assets/squiggle.png")}
         alt="squiggle separator"

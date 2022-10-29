@@ -1,9 +1,10 @@
 import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
-import { fontSize, fontFamily, lineHeight, colors } from "./theme";
+import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
 import P from "./components/P";
+import Headline from "./components/Headline";
 
 const TuitionRequestReminder1 = ({ name }) => {
   return (
@@ -16,14 +17,9 @@ const TuitionRequestReminder1 = ({ name }) => {
         paddingTop="42px"
         align="left"
       />
-      <MjmlText
-        fontSize={fontSize.xl}
-        fontFamily={fontFamily.serif}
-        lineHeight={lineHeight.tight}
-        cssClass="header-md"
-      >
+      <Headline cssClass="header-md">
         Select your loan amount to continue!
-      </MjmlText>
+      </Headline>
       <Button
         href="https://apply.fynncredit.com/application"
         text="Complete Your Loan"

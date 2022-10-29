@@ -16,14 +16,9 @@ const IncompleteReminder2 = ({ name }) => {
         paddingTop="42px"
         align="left"
       />
-      <MjmlText
-        fontSize={fontSize.xl}
-        fontFamily={fontFamily.serif}
-        lineHeight={lineHeight.tight}
-        cssClass="header-xl"
-      >
+      <Headline cssClass="header-xl">
         Getting funded with Fynn only takes 5 minutes!
-      </MjmlText>
+      </Headline>
       <Button
         href="https://apply.fynncredit.com/application"
         text="Continue Your Application"

@@ -1,9 +1,10 @@
-import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
+import { MjmlImage, MjmlDivider } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
-import { fontSize, fontFamily, lineHeight, colors } from "./theme";
+import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
 import P from "./components/P";
+import Headline from "./components/Headline";
 
 const TuitionRequestReminder6 = ({ name }) => {
   return (
@@ -16,14 +17,9 @@ const TuitionRequestReminder6 = ({ name }) => {
         paddingTop="42px"
         align="left"
       />
-      <MjmlText
-        fontSize={fontSize.xl}
-        fontFamily={fontFamily.serif}
-        lineHeight={lineHeight.tight}
-        cssClass="header-xl"
-      >
+      <Headline cssClass="header-xl">
         Your Fynn account is about to be archived!
-      </MjmlText>
+      </Headline>
       <Button
         href="https://apply.fynncredit.com/application"
         text="Complete Your Loan"

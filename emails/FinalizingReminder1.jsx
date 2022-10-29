@@ -2,8 +2,9 @@ import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import P from "./components/P";
-import { fontSize, fontFamily, lineHeight, colors } from "./theme";
+import { colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import Headline from "./components/Headline";
 
 const FinalizingReminder1 = ({ name, schoolName }) => {
   return (
@@ -16,14 +17,9 @@ const FinalizingReminder1 = ({ name, schoolName }) => {
         paddingTop="42px"
         align="left"
       />
-      <MjmlText
-        fontSize={fontSize.xl}
-        fontFamily={fontFamily.serif}
-        lineHeight={lineHeight.tight}
-        cssClass="header-md"
-      >
+      <Headline cssClass="header-md">
         It’s time to sign your loan documents!
-      </MjmlText>
+      </Headline>
       <Button
         href="https://apply.fynncredit.com/application"
         text="Sign your loan"

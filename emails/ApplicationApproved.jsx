@@ -1,9 +1,9 @@
-import { MjmlText, MjmlImage } from "mjml-react";
+import { MjmlImage } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
-import { fontSize, fontFamily, lineHeight } from "./theme";
 import assetUrl from "./util/assetUrl";
 import P from "./components/P";
+import Headline from "./components/Headline";
 
 const ApplicationApproved = ({ name, schoolName }) => {
   return (
@@ -17,15 +17,9 @@ const ApplicationApproved = ({ name, schoolName }) => {
         paddingTop="42px"
         paddingBottom="32px"
       />
-      <MjmlText
-        fontSize={fontSize.xl}
-        fontFamily={fontFamily.serif}
-        lineHeight={lineHeight.tight}
-        paddingBottom="32px"
-        cssClass="header-md"
-      >
+      <Headline paddingBottom="32px" cssClass="header-md">
         You’re approved for a loan up to $15,000!
-      </MjmlText>
+      </Headline>
       <P>Hi {name},</P>
       <P>
         Congratulations! You have been approved for a Fynn loan to attend{" "}
