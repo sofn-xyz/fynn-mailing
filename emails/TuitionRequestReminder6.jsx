@@ -3,6 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const TuitionRequestReminder6 = ({ name }) => {
   return (
@@ -33,19 +34,19 @@ const TuitionRequestReminder6 = ({ name }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>Hi {name},</MjmlText>
-      <MjmlText>
+      <P>Hi {name},</P>
+      <P>
         To complete your loan and avoid losing your approval, you must select
         your loan amount soon! Choosing a loan amount only takes 2 minutes.
         Click the button above, or log into your Fynn account to complete this
         step.
-      </MjmlText>
+      </P>
 
-      <MjmlText>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

@@ -3,6 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const TuitionRequestReminder1 = ({ name }) => {
   return (
@@ -33,17 +34,17 @@ const TuitionRequestReminder1 = ({ name }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>Hi {name},</MjmlText>
-      <MjmlText>
+      <P>Hi {name},</P>
+      <P>
         You’ll need to select a loan amount to proceed with your loan. You can
         click the button above to choose an amount.
-      </MjmlText>
+      </P>
 
-      <MjmlText>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

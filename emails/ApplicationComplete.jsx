@@ -2,6 +2,7 @@ import { MjmlText, MjmlImage } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const ApplicationComplete = ({ name, schoolName }) => {
   return (
@@ -31,28 +32,26 @@ const ApplicationComplete = ({ name, schoolName }) => {
         paddingTop="32px"
         paddingBottom="32px"
       />
-      <MjmlText>
+      <P>
         <b>Hi {name},</b>
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         You’re all set with a Fynn loan and are ready to attend {schoolName}!
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         We’ll reach out shortly after your first day with more information about
         your loan and how to log into your borrower portal.
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         Your borrower portal will allow you to view your loan balance, make
         payments, and more.
-      </MjmlText>
-      <MjmlText>
-        We’re excited to be a part of your success at {schoolName}!
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>We’re excited to be a part of your success at {schoolName}!</P>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

@@ -3,6 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const TuitionRequestReminder5 = ({ name }) => {
   return (
@@ -33,18 +34,18 @@ const TuitionRequestReminder5 = ({ name }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>{name},</MjmlText>
-      <MjmlText>
+      <P>{name},</P>
+      <P>
         Please take a minute to input your tuition request amount for your Fynn
         loan. We need this information to be certified by your school before you
         can sign!
-      </MjmlText>
+      </P>
 
-      <MjmlText>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

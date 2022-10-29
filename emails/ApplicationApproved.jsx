@@ -3,6 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const ApplicationApproved = ({ name, schoolName }) => {
   return (
@@ -25,27 +26,25 @@ const ApplicationApproved = ({ name, schoolName }) => {
       >
         You’re approved for a loan up to $15,000!
       </MjmlText>
-      <MjmlText>Hi {name},</MjmlText>
-      <MjmlText>
+      <P>Hi {name},</P>
+      <P>
         Congratulations! You have been approved for a Fynn loan to attend{" "}
         {schoolName}.
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         Now it’s time to select your loan amount and verify your identity; click
         the button below to complete your loan.
-      </MjmlText>
+      </P>
       <Button
         href="https://apply.fynncredit.com/application"
         text="Complete Your Loan"
       />
-      <MjmlText>
-        We’re excited to be a part of your success at {schoolName}!
-      </MjmlText>
-      <MjmlText>
+      <P>We’re excited to be a part of your success at {schoolName}!</P>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

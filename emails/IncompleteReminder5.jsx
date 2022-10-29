@@ -3,6 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const IncompleteReminder5 = ({ name }) => {
   return (
@@ -33,25 +34,25 @@ const IncompleteReminder5 = ({ name }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>Hi {name},</MjmlText>
-      <MjmlText>
+      <P>Hi {name},</P>
+      <P>
         It’s been a few days since you started your Fynn loan application. If we
         don't hear from you soon, your application may be archived.
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         We understand that finances can be tricky. If this isn't the right time
         for you, don't worry! You can always apply to Fynn again at a later
         date.
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         If you'd like to cancel your application, go to your account by clicking
         the button above and then select “Cancel Application.”
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

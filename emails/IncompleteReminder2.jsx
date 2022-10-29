@@ -3,6 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const IncompleteReminder2 = ({ name }) => {
   return (
@@ -33,21 +34,21 @@ const IncompleteReminder2 = ({ name }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>Hi {name},</MjmlText>
-      <MjmlText>
+      <P>Hi {name},</P>
+      <P>
         You are nearly done with your application for Fynn. It takes less than
         five minutes to get approved for a loan— submit your application and
         find out how much you can get for your program!
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         If you'd like to cancel your application, go to your account by clicking
         the button above and then select “Cancel Application.”{" "}
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

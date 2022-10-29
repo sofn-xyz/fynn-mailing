@@ -3,6 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const FinalizingReminder6 = ({ name }) => {
   return (
@@ -33,18 +34,18 @@ const FinalizingReminder6 = ({ name }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>{name},</MjmlText>
-      <MjmlText>
+      <P>{name},</P>
+      <P>
         This may be your last chance to obtain funding from Fynn! Your loan
         approval will be archived soon unless you sign your loan document. Don’t
         let this opportunity go to waste!
-      </MjmlText>
+      </P>
 
-      <MjmlText>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

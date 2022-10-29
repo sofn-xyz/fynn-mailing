@@ -1,6 +1,7 @@
 import { MjmlText, MjmlImage, MjmlDivider } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
+import P from "./components/P";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
 
@@ -33,22 +34,22 @@ const FinalizingReminder1 = ({ name, schoolName }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>Hello {name},</MjmlText>
-      <MjmlText>
+      <P>Hello {name},</P>
+      <P>
         Your loan is approved. All you need to do before you attend {schoolName}{" "}
         is to sign your loan documents. Click the button above to sign your
         documents!
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         Let us know if you have questions - we're here to help. We're looking
         forward to supporting your time in school and your future career.
-      </MjmlText>
+      </P>
 
-      <MjmlText>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

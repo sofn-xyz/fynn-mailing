@@ -3,6 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const IncompleteReminder1 = ({ name, schoolName }) => {
   return (
@@ -42,21 +43,19 @@ const IncompleteReminder1 = ({ name, schoolName }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>Hello {name},</MjmlText>
-      <MjmlText>
+      <P>Hello {name},</P>
+      <P>
         You’re almost done with your loan application to attend {schoolName}.
         Continue your application below to see if you qualify for full tuition
         funding!
-      </MjmlText>
-      <MjmlText>
-        If you have any questions, simply respond to this email.
-      </MjmlText>
-      <MjmlText>We look forward to reviewing your application.</MjmlText>
-      <MjmlText>
+      </P>
+      <P>If you have any questions, simply respond to this email.</P>
+      <P>We look forward to reviewing your application.</P>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

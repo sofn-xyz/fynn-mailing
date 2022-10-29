@@ -3,6 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const IncompleteReminder4 = ({ name }) => {
   return (
@@ -33,21 +34,21 @@ const IncompleteReminder4 = ({ name }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>{name},</MjmlText>
-      <MjmlText>
+      <P>{name},</P>
+      <P>
         You’re close to completing your Fynn application! If you do not submit
         your application soon, it may be archived, and your progress will be
         lost.
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         If you'd like to cancel your application, go to your account by clicking
         the button above and then select “Cancel Application.”{" "}
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

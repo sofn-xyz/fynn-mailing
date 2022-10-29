@@ -2,6 +2,7 @@ import { MjmlText, MjmlImage } from "mjml-react";
 import BaseLayout from "./layouts/Base";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const StudentDispersed = ({ name, schoolName }) => {
   return (
@@ -24,11 +25,11 @@ const StudentDispersed = ({ name, schoolName }) => {
       >
         We’ve officially sent your tuition to your school
       </MjmlText>
-      <MjmlText>Hi {name},</MjmlText>
-      <MjmlText>
+      <P>Hi {name},</P>
+      <P>
         We’ve sent your tuition to your school today. This means two things:
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <MjmlText padding="1px 0 40px">
         1.&nbsp;&nbsp;Your interest officially starts accruing today.
       </MjmlText>
       <MjmlText>
@@ -36,15 +37,15 @@ const StudentDispersed = ({ name, schoolName }) => {
         log into your borrower portal. You can manage all aspects of your loan
         in your borrower portal.
       </MjmlText>
-      <MjmlText>
+      <P>
         As always, please feel free to reach out with any questions. We’re
         excited for your success at {schoolName}.
-      </MjmlText>
-      <MjmlText>
+      </P>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };

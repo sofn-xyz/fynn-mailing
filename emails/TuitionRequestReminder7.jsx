@@ -3,6 +3,7 @@ import BaseLayout from "./layouts/Base";
 import Button from "./components/Button";
 import { fontSize, fontFamily, lineHeight, colors } from "./theme";
 import assetUrl from "./util/assetUrl";
+import P from "./components/P";
 
 const TuitionRequestReminder7 = ({ name }) => {
   return (
@@ -33,20 +34,20 @@ const TuitionRequestReminder7 = ({ name }) => {
         paddingBottom="36px"
         borderWidth="6px"
       />
-      <MjmlText>{name},</MjmlText>
-      <MjmlText>
+      <P>{name},</P>
+      <P>
         There’s not much time left to request your tuition amount for your Fynn
         loan! We need to know how much money you will need so that we can verify
         that with your school. If you don’t make a tuition request, your
         application may be archived soon, causing you to lose your accepted
         status.
-      </MjmlText>
+      </P>
 
-      <MjmlText>
+      <P>
         Best,
         <br />
         The Fynn team
-      </MjmlText>
+      </P>
     </BaseLayout>
   );
 };
