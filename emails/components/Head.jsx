@@ -90,10 +90,6 @@ export default function Head({ children }) {
           .header-xl div{
             font-size: 30px !important;
           }
-          .top-column > table > tbody > tr > td {
-            padding: 7px 0 32px !important;
-          }
-
           .gutter {
               padding-left: ${spacing.mobileGutter}px !important;
               padding-right: ${spacing.mobileGutter}px !important;  
