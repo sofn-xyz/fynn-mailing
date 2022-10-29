@@ -12,6 +12,8 @@ export default function Button({ href, text }) {
       href={href}
       backgroundColor={colors.blue}
       borderRadius={borderRadius.full}
+      paddingTop="16px"
+      padding="0"
     >
       {text}
     </MjmlButton>

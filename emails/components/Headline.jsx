@@ -9,7 +9,7 @@ export default function Headline({ cssClass, paddingBottom, align, children }) {
       lineHeight={lineHeight.tight}
       cssClass={cssClass}
       align={align}
-      paddingBottom={paddingBottom}
+      padding={`16px 0 ${paddingBottom || "10px"} 0`}
     >
       {children}
     </MjmlText>

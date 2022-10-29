@@ -10,24 +10,23 @@ import {
 import Head from "../components/Head";
 import Footer from "../components/Footer";
 import assetUrl from "../util/assetUrl";
-import { colors, fontSize } from "./theme";
+import { colors, fontSize, spacing } from "./theme";
 import P from "../components/P";
 
-export default function BaseLayout(
-  { backgroundColor, children, centerLogo } = { backgroundColor: colors.white }
-) {
+export default function BaseLayout({ backgroundColor, children, centerLogo }) {
   return (
     <Mjml>
       <Head />
       <MjmlBody width={"640px"}>
         <MjmlWrapper
-          backgroundColor={backgroundColor}
+          backgroundColor={backgroundColor || colors.white}
           fullWidth={true}
           padding="32px 20px"
         >
-          <MjmlSection paddingBottom={"0px"} cssClass="main top-section">
+          <MjmlSection paddingBottom={"0px"} cssClass="main top-section gutter">
             <MjmlColumn
-              padding={"7px 7px 32px"}
+              paddingTop="7px"
+              paddingBottom="32px"
               backgroundColor={colors.white}
               cssClass="top-column"
             >
@@ -39,6 +38,7 @@ export default function BaseLayout(
                 width="63px"
                 paddingTop="0px"
                 align={centerLogo ? "center" : "left"}
+                padding="0"
               />
               {children}
               <P>
@@ -48,10 +48,9 @@ export default function BaseLayout(
               </P>
             </MjmlColumn>
           </MjmlSection>
-          <MjmlSection paddingTop={"0px"} cssClass="bottom-section">
+          <MjmlSection padding="0" cssClass="bottom-section gutter">
             <MjmlColumn
-              padding={"14px"}
-              paddingBottom="0px"
+              padding="24px 0"
               backgroundColor={colors.black}
               cssClass="bottom-column"
             >
@@ -59,11 +58,12 @@ export default function BaseLayout(
                 color={colors.white}
                 fontSize={fontSize.sm}
                 align="center"
-                paddingBottom="6px"
+                padding="0"
               >
                 <b>Questions?</b> Email us at{" "}
                 <a href="mailto:help@fynncredit.com">help@fynncredit.com</a> or
-                call (505) 806-2054.
+                call{" "}
+                <span style={{ display: "inline-block" }}>(505) 806-2054.</span>
               </MjmlText>
             </MjmlColumn>
           </MjmlSection>

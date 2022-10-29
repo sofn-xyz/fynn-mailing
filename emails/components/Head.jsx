@@ -11,6 +11,7 @@ import {
   fontSize,
   colors,
   borderRadius,
+  spacing,
 } from "./theme";
 
 export default function Head({ children }) {
@@ -53,7 +54,7 @@ export default function Head({ children }) {
           background-color: ${colors.black};
         }
         .bottom-column {
-          padding-bottom: 0px;
+          padding: 0px;
           border-bottom-left-radius: ${borderRadius.base}px;
           border-bottom-right-radius: ${borderRadius.base}px;
         }
@@ -74,6 +75,11 @@ export default function Head({ children }) {
           max-width: 410px;
         }
 
+        .gutter {
+          padding-left: ${spacing.desktopGutter}px !important;
+          padding-right: ${spacing.desktopGutter}px !important;  
+        }
+
         @media (max-width:480px) {
           .footer td {
             padding: 10px 0px !important;
@@ -88,9 +94,9 @@ export default function Head({ children }) {
             padding: 7px 0 32px !important;
           }
 
-          .top-column > table > tbody > tr > td > table > tbody > tr > td {
-            padding-left: 20px !important;
-            padding-right: 20px !important;
+          .gutter {
+              padding-left: ${spacing.mobileGutter}px !important;
+              padding-right: ${spacing.mobileGutter}px !important;  
           }
         }
       `}</MjmlStyle>

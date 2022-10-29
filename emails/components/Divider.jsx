@@ -8,6 +8,7 @@ export default function Divider() {
       paddingTop="32px"
       paddingBottom="30px"
       borderWidth="6px"
+      padding="0"
     />
   );
 }

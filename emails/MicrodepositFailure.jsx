@@ -7,23 +7,22 @@ import assetUrl from "./util/assetUrl";
 import P from "./components/P";
 import Headline from "./components/Headline";
 import Link from "./components/Link";
+import HeadlineImage from "./components/HeadlineImage";
+import Li from "./components/Li";
 
 const MicrodepositFailure = ({ name }) => {
   return (
     <BaseLayout backgroundColor={colors.greenDark}>
-      <MjmlImage
+      <HeadlineImage
         src={assetUrl("/assets/action-required.png")}
-        alt="Reminder"
+        alt="Action required"
         height="33px"
         width="169px"
-        paddingTop="42px"
-        align="left"
       />
       <Headline cssClass="header-xl" paddingBottom="0">
         Connect a new account
       </Headline>
       <P>Verify your identity with a different account</P>
-      <MjmlSpacer height="10px" />
       <Button
         href="https://apply.fynncredit.com/application"
         text="Complete Your Loan"
@@ -34,18 +33,10 @@ const MicrodepositFailure = ({ name }) => {
         Fynn was not able to verify your identity with the bank account that you
         provided. Some reasons for this include the following:
       </P>
-      <MjmlText padding="1px 25px 0 40px">
-        •&nbsp;&nbsp;The account is not a checking/savings account
-      </MjmlText>
-      <MjmlText padding="1px 25px 0 40px">
-        •&nbsp;&nbsp;The account is too new
-      </MjmlText>
-      <MjmlText padding="1px 25px 0 40px">
-        •&nbsp;&nbsp;The account is overdrawn or closed
-      </MjmlText>
-      <MjmlText padding="1px 25px 0 40px">
-        •&nbsp;&nbsp;You are not the owner of the account
-      </MjmlText>
+      <Li>The account is not a checking/savings account</Li>
+      <Li>The account is too new</Li>
+      <Li>The account is overdrawn or closed</Li>
+      <Li>You are not the owner of the account</Li>
       <P>Please reattempt the bank linking with a different account.</P>
       <P>
         If you don’t have another account you can quickly and easily create a
