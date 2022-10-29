@@ -1,5 +1,5 @@
-import FinalizingReminder4 from "../FinalizingReminder4";
+import FinalizingReminder3 from "../FinalizingReminder3";
 
 export function toAmelita() {
-  return <FinalizingReminder4 name="Amelita" />;
+  return <FinalizingReminder3 name="Amelita" />;
 }

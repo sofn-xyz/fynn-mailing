@@ -28,10 +28,10 @@ const StudentDispersed = ({ name, schoolName }) => {
       <MjmlText>
         We’ve sent your tuition to your school today. This means two things:
       </MjmlText>
-      <MjmlText padding="1px 0 40px">
+      <MjmlText>
         1.&nbsp;&nbsp;Your interest officially starts accruing today.
       </MjmlText>
-      <MjmlText padding="1px 0 40px">
+      <MjmlText>
         2.&nbsp;&nbsp;Next week, you will receive a text and email about how to
         log into your borrower portal. You can manage all aspects of your loan
         in your borrower portal.

@@ -58,19 +58,19 @@ const Head = ({ children }) => {
           border-bottom-right-radius: ${borderRadius.base}px;
         }
 
-        .header-sm div{
+        .header-sm div {
           max-width: 300px;
         }
 
-        .header-md div{
+        .header-md div {
           max-width: 340px;
         }
 
-        .header-lg div{
+        .header-lg div {
           max-width: 380px;
         }
 
-        .header-xl div{
+        .header-xl div {
           max-width: 410px;
         }
 

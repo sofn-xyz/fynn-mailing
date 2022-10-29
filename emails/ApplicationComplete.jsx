@@ -19,7 +19,7 @@ const ApplicationComplete = ({ name, schoolName }) => {
         fontFamily={fontFamily.serif}
         lineHeight={lineHeight.tight}
         align="center"
-        cssClass="header-md"
+        cssClass="header-lg"
       >
         You’re ready to attend your program!
       </MjmlText>
