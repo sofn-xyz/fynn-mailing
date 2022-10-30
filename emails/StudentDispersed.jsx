@@ -14,8 +14,7 @@ const StudentDispersed = ({ name, schoolName }) => {
         height="48px"
         width="48px"
         align="left"
-        paddingTop="42px"
-        paddingBottom="32px"
+        padding="42px 0 32px"
       />
       <Headline paddingBottom="32px" cssClass="header-xl">
         We’ve officially sent your tuition to your school

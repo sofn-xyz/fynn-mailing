@@ -15,7 +15,7 @@ const FinalizingReminder3 = ({ name }) => {
       </Headline>
       <Button
         href="https://apply.fynncredit.com/application"
-        text="Sign your Fynn loan"
+        text="Sign Your Fynn loan"
       />
       <Divider />
       <P>Hi {name},</P>

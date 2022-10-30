@@ -5,11 +5,17 @@ import { colors } from "./components/theme";
 import P from "./components/P";
 import Headline from "./components/Headline";
 import HeadlineImage from "./components/HeadlineImage";
+import assetUrl from "./util/assetUrl";
 
 const TuitionRequestReminder6 = ({ name }) => {
   return (
     <BaseLayout backgroundColor={colors.greenDark}>
-      <HeadlineImage />
+      <HeadlineImage
+        src={assetUrl("/assets/action-required.png")}
+        alt="Action required"
+        height="33px"
+        width="169px"
+      />
       <Headline cssClass="header-xl">
         Your Fynn account is about to be archived!
       </Headline>
