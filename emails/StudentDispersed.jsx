@@ -7,7 +7,7 @@ import Headline from "./components/Headline";
 
 const StudentDispersed = ({ name, schoolName }) => {
   return (
-    <BaseLayout backgroundColor={colors.green}>
+    <BaseLayout backgroundColor={colors.white}>
       <MjmlImage
         src={assetUrl("/assets/balloons.png")}
         alt="balloons"
