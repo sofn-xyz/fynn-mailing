@@ -1,4 +1,8 @@
-# Fynn-Mailing
+# Fynn + Mailing
+
+Templates for https://fynncredit.com
+
+View them at https://fynn-mailing.vercel.app/
 
 ## Local development
 
@@ -6,11 +10,3 @@
 yarn install
 yarn mailing
 ```
-
-## See it Live
-
-https://fynn-mailing.vercel.app/
-
-## Designs
-
-https://www.figma.com/file/N1nSRAU7hADCqllIiNLrlQ/fynn-emails
